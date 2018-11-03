@@ -1,0 +1,31 @@
+@mixin button {
+    background-color: var(--color-blue-light-1);
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius:     .4rem        ;
+    -webkit-border-radius:     .4rem        ;
+    -moz-border-radius:     .4rem        ;
+    -ms-border-radius:     .4rem        ;
+    -o-border-radius:     .4rem        ;
+}
+
+@mixin borderRaius($radius) {
+    border-radius:$radius;
+    -webkit-border-radius:$radius;
+    -moz-border-radius:$radius;
+    -ms-border-radius:$radius;
+    -o-border-radius:$radius;
+}
+
+@mixin transition($key, $time, $ease) {
+    transition: $key $time $ease;
+    -webkit-transition: $key $time $ease;
+    -moz-transition: $key $time $ease;
+    -ms-transition: $key $time $ease;
+    -o-transition: $key $time $ease;
+}
+
