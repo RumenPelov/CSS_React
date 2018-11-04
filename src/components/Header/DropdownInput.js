@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Sprite from '../images/sprite.svg';
+import Sprite from '../_images/sprite.svg';
 
 export default class DropdownInput extends Component {
 
@@ -25,7 +25,7 @@ export default class DropdownInput extends Component {
 
   renderIcon() {
     if(this.props.icon){
-      return  ( <svg className="dropdown__icon-default">
+      return  ( <svg className="dropdown__icon">
                    <use xlinkHref={Sprite+"#"+this.props.icon}></use>
                 </svg> );
 
@@ -33,7 +33,7 @@ export default class DropdownInput extends Component {
       return <img src={this.props.image} style={this.props.imgStyle} alt=""/>
     }
 
-    return  ( <svg className="dropdown__icon-default">
+    return  ( <svg className="dropdown__icon">
                 <use xlinkHref={Sprite+"#icon-chevron-small-down"}></use>
               </svg> );
   }

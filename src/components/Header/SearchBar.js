@@ -8,8 +8,8 @@ import { reduxForm, Field } from 'redux-form';
  import {Categories, Locations} from './searchItems';
  import { lookUp }  from '../../actions';
  
- import IconLocation from '../images/IconLocation.png';
- import Sprite from '../images/sprite.svg';
+ import IconLocation from '../_images/IconLocation.png';
+ import Sprite from '../_images/sprite.svg';
  
 
 class SearchBar extends React.Component {
